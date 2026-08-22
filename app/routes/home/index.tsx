@@ -1,6 +1,4 @@
 import type { Route } from "./+types/index";
-import Hero from "~/components/Hero";
-import { faker } from '@faker-js/faker';
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -10,9 +8,5 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return (
-    <section>
-      <Hero name={faker.person.firstName()} />
-    </section>
-  );
+  return <>HomePage</>;
 }
