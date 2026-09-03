@@ -46,10 +46,10 @@ const ProjectDetailsPage = ({ loaderData }: Route.ComponentProps) => {
           <h1 className="text-3xl font-bold text-blue-400 mb-4">
             {project.title}
           </h1>
-          <p className="text-gray-300 text-sm mb-4">
+          <p className="text-sm mb-4">
             {new Date(project.date).toLocaleDateString()} • {project.category}
           </p>
-          <p className="text-gray-200 mb-6">{project.description}</p>
+          <p className="mb-6">{project.description}</p>
 
           <a
             href={project.url}
