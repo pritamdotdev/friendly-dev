@@ -34,15 +34,15 @@ const BlogPostDetailsPage = ({ loaderData }: Route.ComponentProps) => {
         {postMeta.title}
       </h1>
       <p className="text-sm text-gray-400 mb-6">
-        {new Date(postMeta.date).toLocaleDateString()}
+        {new Date(postMeta.date).toDateString()}
       </p>
-      <div className=" prose prose-invert max-w-none mb-12">
+      <div className="prose prose-invert max-w-none mb-12">
         <ReactMarkdown>{markdown}</ReactMarkdown>
         <Link
           to="/blog"
           className="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
         >
-          ⬅ Back to Posts
+          ⬅ Back To Posts
         </Link>
       </div>
     </div>
